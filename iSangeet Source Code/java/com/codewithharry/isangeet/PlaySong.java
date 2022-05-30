@@ -14,15 +14,7 @@ import android.widget.TextView;
 import java.io.File;
 import java.util.ArrayList;
 
-public class PlaySong extends AppCompatActivity {
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        mediaPlayer.stop();
-        mediaPlayer.release();
-        updateSeek.interrupt();
-    }
 
     TextView textView;
     ImageView play, previous, next;
